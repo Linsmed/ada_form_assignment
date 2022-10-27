@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week 5 ADA HTML FORM ASSIGNMENT</title>
+    <link rel="stylesheet" href="media.html" />
+  </head>
+  <body>
+    <p>WELCOME TO MY PAGE</p>
+    <form
+      action="/action_page.php"
+      method="get"
+      novalidate
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+      target="_blank"
+      autocomplete="on"
+    >
+      <label for="fname">First Name</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        value="Ibraheem"
+        readonly
+      /><br />
+      <label for="lname">Last Name</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        value="Ejibode"
+        disabled
+      /><br />
+      <label for="age">Age</label><br />
+      <input type="number" id="age" name="age" value="20" /><br />
+      <label for="pnumber">Phone Nunber</label><br />
+      <input
+        type="tel"
+        id="pnumber"
+        pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+        placeholder="+234812345678"
+      /><br />
+      <label for="myemail">Email</label><br />
+      <input
+        type="email"
+        id="myemail"
+        name="myemail"
+        value="ejibode@gmail.com"
+      /><br />
+      <input type="hidden" id="custid" value="3497" />
+      <label for="password">Password</label><br />
+      <input type="password" id="password" value="not" /><br />
+      <label for="date">Date Of Birth</label><br />
+      <input type="date" id="date" min="1991-01-20" /><br />
+      <label for="gender">Gender</label><br />
+      <input type="radio" id="sex1" />
+      <label for="sex1">Male</label>
+      <input type="radio" id="sex2" />
+      <label for="sex2">Female</label>
+      <input type="radio" id="sex3" />
+      <label for="sex3">Hemaphrodrite</label>
+      <p>Tick the one tha is applicable to you below</p>
+      <input type="checkbox" id="vehicle" />
+      <label for="vehicle">I need a car</label><br />
+      <input type="checkbox" id="bike" />
+      <label for="bike">I need a bike</label><br />
+      <input type="checkbox" id="plane" />
+      <label for="plane">I need an aeroplane</label><br /><br />
+      <label for="file">Select a document:</label><br />
+      <input type="file" id="file" /><br /><br />
+      <label for="doa">Date Of Appointment</label><br />
+      <input type="month" id="doa" /><br />
+      <label for="homepage">Add your homepage</label><br />
+      <input type="=url" id="homepage" /><br />
+      <label for="">Choose a number</label><br />
+      <input type="range" min="0" max="100" /><br />
+      <label for="">Choose your preffered track</label><br /><br />
+      <select name="tracks" id="trcks" size="2" multiple>
+        <option value="Front-end">Front-end development</option>
+
+        <option value="backend">Back-end development/option></option>
+
+        <option value="mobile app" selected>Mobile app development</option>
+
+        <option value="fullstack">Fullstack</option></select
+      ><br /><br />
+      <textarea name="message" id="" cols="30" rows="10">
+I will be an awesome front-end developer in the next 6 months</textarea
+      ><br /><br />
+      <button
+        type="button"
+        onclick="alert('Do you want tobecome a seasoned developer')"
+      >
+        Click here and watch!</button
+      ><br />
+      <fieldset>
+        <legend>Personal Details o the next o kin</legend>
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" name="fname" value="Ayo" /><br />
+        <label for="surname">surname</label><br />
+        <input type="text" id="surname" name="fname" value="Lawal" /><br />
+        <label for="age">Age</label><br />
+        <input type="nnumber" id="age" name="age" value="35" /><br />
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          aria-value="jq@gmail.com"
+        /><br />
+        <label for="address">Home Address</label><br />
+        <input type="text" name="address" id="address" value="osogbo" /><br />
+        <label for="oficeaddres">Office Address</label><br />
+        <input
+          type="text"
+          name="officeadrress"
+          id="oficeaddress"
+          value="ogo-oluwa"
+        /><br />
+      </fieldset>
+      <input list="browsers" /><br />
+      <datalist id="browsers">
+        <br />
+        <option value="internet explorer"></option>
+        <option value="chrome"></option>
+        <option value="firefox"></option>
+      </datalist>
+
+      0
+      <input type="range" id="a" name="a" value="50" />
+      100 +
+      <input type="number" id="b" name="b" value="50" />
+      =
+      <output name="x" for="a b"></output>
+      <br /><br />
+      <input type="submit" />
+      <input type="reset" /><br />
+      <label for="week">Week</label>
+      <input type="week" id="week" name="week" value="su" /><br />
+      <input type="image" /><br />
+      <input type="search" /><br />
+      <input type="url" /><br />
+      <input type="color" /><br />
+    </form>
+  </body>
+</html>
